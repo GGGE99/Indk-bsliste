@@ -13,9 +13,13 @@
     <title>Huskeliste</title>
 </head>
 <body>
+${sessionScope.besked}
+<br>
 <h1>Du er nu på min webshop og er nu klar til at tilføje emner</h1>
 <br>
 <br>
+
+
 
 
 
