@@ -16,6 +16,23 @@
 ${sessionScope.besked}
 <br>
 <h1>Du er nu på min webshop og er nu klar til at tilføje emner</h1>
+
+<form action="BuyServlet" method="post">
+    <label for="fname">Skriv vare</label><br>
+    <input type="text" id="fname" name="navn"><br>
+    <input type="submit" value="tilføj">
+</form>
+
+${requestScope.besked}
+<br>
+<c:forEach var="element" items="${sessionScope.basket}">
+
+    ${element}
+    <br>
+
+</c:forEach>
+
+
 <br>
 <br>
 
