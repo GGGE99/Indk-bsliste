@@ -13,7 +13,7 @@
     <title>Huskeliste</title>
 </head>
 <body>
-<h1>Du er nu på din huskeliste og er klar til at tilføje emner</h1>
+<h1>Du er nu på min webshop og er nu klar til at tilføje emner</h1>
 <br>
 <br>
 
