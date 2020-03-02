@@ -36,6 +36,12 @@ public class LoginServlet extends HttpServlet {
             servletContext.setAttribute("aktiveBrugere", aktiveBruger);
         }
 
+        if(!(session.getAttribute("besked") == null)){
+
+            request.getRequestDispatcher("WEB-INF/HuskeListe.jsp").forward(request, response);
+
+        }
+
         if (!((Map<String, String>) servletContext.getAttribute("brugerMap")).containsKey(navn)) {
 
             request.setAttribute("besked", "Opret dig som bruger");
@@ -53,6 +59,7 @@ public class LoginServlet extends HttpServlet {
                 ((Set<String>) servletContext.getAttribute("aktiveBrugere")).add(navn);
 
                 session.setAttribute("besked", "Du er logget inf med navnet: " + navn);
+                session.setAttribute("navn", navn);
                 request.getRequestDispatcher("WEB-INF/HuskeListe.jsp").forward(request, response);
             }
         }

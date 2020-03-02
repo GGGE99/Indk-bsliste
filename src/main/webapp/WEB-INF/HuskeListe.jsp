@@ -36,7 +36,9 @@ ${requestScope.besked}
 <br>
 <br>
 
-
+<form action="LogOutServlet" method="post">
+    <input type="submit" value="Logout">
+</form>
 
 
 
