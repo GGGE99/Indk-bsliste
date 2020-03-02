@@ -11,6 +11,7 @@
     <title>Huskeliste</title>
 </head>
 <body>
-    du har nu adgang til din huskeliste
+<h1>Du er nu på din huskeliste og er klar til at tilføje emner</h1>
+
 </body>
 </html>
